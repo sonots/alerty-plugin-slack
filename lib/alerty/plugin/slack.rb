@@ -1,4 +1,5 @@
 require 'alerty'
+require_relative 'slack/version'
 require_relative 'slack/slack_client'
 
 class Alerty
