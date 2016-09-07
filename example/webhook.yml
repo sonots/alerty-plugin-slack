@@ -1,0 +1,8 @@
+log_path: STDOUT
+log_level: debug
+plugins:
+  - type: slack
+    webhook_url: https://hooks.slack.com/services/XXXXX/XXXXX/XXXXX
+    # see https://api.slack.com/methods/chat.postMessage
+    payload:
+      text: "FAILURE: [${hostname}] ${command}"
