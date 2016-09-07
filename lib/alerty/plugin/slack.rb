@@ -7,9 +7,6 @@ class Alerty
     class Slack
       def initialize(config)
         @payload = config.payload || {}
-        @payload['channel'] = config.channel if config.channel
-        @payload['text'] = config.text if config.text
-
         if config.webhook_url
           raise ConfigError.new('slack: webhook_url is given, but empty') if config.webhook_url.empty?
           @client = SlackClient::IncomingWebhook.new(config.webhook_url)
