@@ -1,0 +1,10 @@
+log_path: STDOUT
+log_level: debug
+plugins:
+  - type: slack
+    slackbot_url: https://xxxxxx.slack.com/services/hooks/slackbot?token=XXXXXXXXXXXXXXXXXXXXX
+    # see https://api.slack.com/methods/chat.postMessage
+    payload:
+      channel: alerty_test
+      text: "FAILURE: [${hostname}] ${command}\n${output}"
+
