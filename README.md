@@ -22,7 +22,7 @@ Or install it yourself as:
 
 - type: must be `slack`
 - webhook_url: Slack Webhook URL. Get from https://slack.com/apps/A0F7XDUAZ-incoming-webhooks
-- slackbot_url: Slack SlackBot URL. Get from https://analytics-support.slack.com/apps/A0F81R8ET-slackbot
+- slackbot_url: Slack SlackBot URL. Get from https://slack.com/apps/A0F81R8ET-slackbot
 - webapi_token: Slack WebAPI token
 - payload
   - text: text message
