@@ -26,7 +26,7 @@ Or install it yourself as:
 - webapi_token: Slack WebAPI token
 - payload
   - text: text message
-  - channel: channel name
+  - channel: channel name or id (channel id is recommended because it is unchanged even if a channel is renamed)
   - see https://api.slack.com/methods/chat.postMessage and https://api.slack.com/docs/message-attachments
 
 ## Placeholders
